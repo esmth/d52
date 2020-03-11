@@ -222,36 +222,36 @@ struct sfrentry keilsfr[128] = {
 struct sfrentry sfrbits[128] = {
     {"p0.0"},   {"p0.1"},   {"p0.2"},   {"p0.3"},   // 80 - 83
     {"p0.4"},   {"p0.5"},   {"p0.6"},   {"p0.7"},   // 84 - 87
-    {"it0"},    {"ie0"},    {"it1"},    {"ie1"},    // 88 - 8b
-    {"tr0"},    {"tf0"},    {"tr1"},    {"tf1"},    // 8c - 8f
+    {"tcon.0"}, {"tcon.1"}, {"tcon.2"}, {"tcon.3"}, // 88 - 8b
+    {"tcon.4"}, {"tcon.5"}, {"tcon.6"}, {"tcon.7"}, // 8c - 8f
     {"p1.0"},   {"p1.1"},   {"p1.2"},   {"p1.3"},   // 90 - 93
     {"p1.4"},   {"p1.5"},   {"p1.6"},   {"p1.7"},   // 94 - 97
-    {"ri"},     {"ti"},     {"rb8"},    {"tb8"},    // 98 - 9b
-    {"ren"},    {"sm2"},    {"sm1"},    {"sm0"},    // 9c - 9f
+    {"scon.0"}, {"scon.1"}, {"scon.2"}, {"scon.3"}, // 98 - 9b
+    {"scon.4"}, {"scon.5"}, {"scon.6"}, {"scon.7"}, // 9c - 9f
     {"p2.0"},   {"p2.1"},   {"p2.2"},   {"p2.3"},   // a0 - a3
     {"p2.4"},   {"p2.5"},   {"p2.6"},   {"p2.7"},   // a4 - a7
-    {"ex0"},    {"et0"},    {"ex1"},    {"et1"},    // a8 - ab
-    {"es"},     {"ie.5"},   {"ie.6"},   {"ea"},     // ac - af
-    {"rxd"},    {"txd"},    {"int0"},   {"int1"},   // b0 - b3
-    {"t0"},     {"t1"},     {"wr"},     {"rd"},     // b4 - b7
-    {"px0"},    {"pt0"},    {"px1"},    {"pt1"},    // b8 - bb
-    {"ps"},     {"ip.5"},   {"ip.6"},   {"ip.7"},   // bc - bf
-    {"0c0h.0"}, {"0c0h.1"}, {"0c0h.2"}, {"0c0h.3"}, // c0 - c3
-    {"0c0h.4"}, {"0c0h.5"}, {"0c0h.6"}, {"0c0h.7"}, // c4 - c7
-    {"cprl2"},  {"ct2"},    {"tr2"},    {"exen2"},  // c8 - cb
-    {"tclk"},   {"rclk"},   {"exf2"},   {"tf2"},    // cc - cf
-    {"p"},      {"psw.1"},  {"ov"},     {"rs0"},    // d0 - d3
-    {"rs1"},    {"f0"},     {"ac"},     {"cy"},     // d4 - d7
-    {"ct0"},    {"ct1"},    {"i2cfg.2"},{"i2cfg.3"},// d8 - db
-    {"tirun"},  {"clrti"},  {"mastrq"}, {"slaven"}, // dc - df
+    {"ien0.0"}, {"ien0.1"}, {"ien0.2"}, {"ien0.3"}, // a8 - ab
+    {"ien0.4"}, {"ien0.5"}, {"ien0.6"}, {"ien0.7"}, // ac - af
+    {"p3.0"},   {"p3.1"},   {"p3.2"},   {"p3.3"},   // b0 - b3
+    {"tp3.4"},  {"p3.5"},   {"p3.6"},   {"p3.7"},   // b4 - b7
+    {"ien1.0"}, {"ien1.1"}, {"ien1.2"}, {"ien1.3"}, // b8 - bb
+    {"ien1.4"}, {"ien1.5"}, {"ien1.6"}, {"ien1.7"}, // bc - bf
+    {"ircon.0"},{"ircon.1"},{"ircon.2"},{"ircon.3"},// c0 - c3
+    {"ircon.4"},{"ircon.5"},{"ircon.6"},{"ircon.7"},// c4 - c7
+    {"t2con.0"},{"t2con.1"},{"t2con.2"},{"t2con.3"},// c8 - cb
+    {"t2con.4"},{"t2con.5"},{"t2con.6"},{"t2con.7"},// cc - cf
+    {"psw.0"},  {"psw.1"},  {"psw.2"},  {"psw.3"},  // d0 - d3
+    {"psw.4"},  {"psw.5"},  {"psw.6"},  {"psw.7"},  // d4 - d7
+    {"adcon.0"},{"adcon.1"},{"adcon.2"},{"adcon.3"},// d8 - db
+    {"adcon.4"},{"adcon.5"},{"adcon.6"},{"adcon.7"},// dc - df
     {"acc.0"},  {"acc.1"},  {"acc.2"},  {"acc.3"},  // e0 - e3
     {"acc.4"},  {"acc.5"},  {"acc.6"},  {"acc.7"},  // e4 - e7
-    {"ibf"},    {"obf"},    {"idsm"},   {"obfc"},   // e8 - eb
-    {"ma0"},    {"ma1"},    {"mb0"},    {"mb1"},    // ec - ef
+    {"p4.0"},   {"p4.1"},   {"p4.2"},   {"p4.3"},   // e8 - eb
+    {"p4.4"},   {"p4.5"},   {"p4.6"},   {"p4.7"},   // ec - ef
     {"b.0"},    {"b.1"},    {"b.2"},    {"b.3"},    // f0 - f3
     {"b.4"},    {"b.5"},    {"b.6"},    {"b.7"},    // f4 - f7
-    {"xstp"},   {"xstr"},   {"makstp"}, {"makstr"}, // f8 - fb
-    {"xactv"},  {"xdata"},  {"idle"},   {"i2sta.7"} // fc - ff
+    {"p5.0"},   {"p5.1"},   {"p5.2"},   {"p5.3"},   // f8 - fb
+    {"p5.4"},   {"p5.5"},   {"p5.6"},   {"p5.7"}    // fc - ff
 } ;
 
 // Names for Special Function Register bits for Keil A51 compatibility
